@@ -1,4 +1,4 @@
-# Halal Food In China RAG Dataset 🇨🇳☪️
+# Halal Food In China RAG Dataset ☪️
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue)](https://huggingface.co/datasets/qurancn/Halal-Food-In-China)
