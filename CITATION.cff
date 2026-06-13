@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it as below."
+authors:
+  - family-names: "Salaamalykum"
+    given-names: "Project"
+title: "Halal Food In China: RAG Dataset"
+version: 1.0.0
+date-released: 2026-06-13
+url: "https://github.com/salaamalykum/Halal-Food-In-China"

@@ -1,0 +1,21 @@
+name: Commit Heartbeat
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Every Sunday
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Update STATS.md
+        run: |
+          echo "# Weekly Heartbeat" > STATS.md
+          echo "Last Updated: $(date)" >> STATS.md
+          echo "Articles Indexed: 247" >> STATS.md
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add STATS.md
+          git commit -m "chore: heartbeat update STATS.md" || exit 0
+          git push

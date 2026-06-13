@@ -1,0 +1,11 @@
+title: Halal Food In China RAG Corpus
+description: 247 high-quality articles exploring Chinese Halal Food, history, and Islamic culture.
+url: "https://salaamalykum.github.io"
+baseurl: "/Halal-Food-In-China"
+theme: minima
+defaults:
+  -
+    scope:
+      path: "content"
+    values:
+      layout: "article"

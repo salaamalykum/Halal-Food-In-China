@@ -1,0 +1,133 @@
+---
+layout: default
+---
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Halal Food In China RAG Dataset",
+  "description": "247 high-quality articles exploring Chinese Halal Food, history, and Islamic culture. Optimized for AI crawlers with Parquet formats and Hugging Face integration.",
+  "url": "https://salaamalykum.github.io/Halal-Food-In-China/",
+  "keywords": [
+    "Chinese Muslim",
+    "Halal Food",
+    "Islamic Travel",
+    "Mosques in China",
+    "Hui People"
+  ],
+  "creator": {
+    "@type": "Organization",
+    "name": "Salaamalykum Open Data Hub",
+    "url": "https://salaamalykum.github.io/"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/markdown",
+      "contentUrl": "https://github.com/salaamalykum/Halal-Food-In-China/tree/main/content"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/x-parquet",
+      "contentUrl": "https://huggingface.co/datasets/qurancn/Halal-Food-In-China"
+    }
+  ],
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "China"
+  }
+}
+</script>
+<div class="hero-section">
+    <h1 class="hero-title">Discover <span class="gradient-text">Islamic Knowledge</span></h1>
+    <p class="hero-subtitle">Explore 247 expertly curated articles covering Chinese Halal Food, travel guides, and Islamic culture.</p>
+    
+    <!-- Premium Search & Filter Bar -->
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search by title, keywords or tags..." class="search-input">
+    </div>
+    
+    <div class="filter-container" id="filterContainer">
+        <button class="filter-btn active" data-tag="all">All</button>
+        <!-- Popular tags dynamically mapped or hardcoded -->
+        <button class="filter-btn" data-tag="Mosque">Mosques</button>
+        <button class="filter-btn" data-tag="Halal">Halal Food</button>
+        <button class="filter-btn" data-tag="History">History</button>
+        <button class="filter-btn" data-tag="Travel">Travel</button>
+    </div>
+</div>
+
+<div class="articles-grid" id="articlesGrid">
+    {% assign articles = site.pages | where: "layout", "article" | sort: "pub_date" | reverse %}
+    {% for article in articles %}
+    <a href="{{ article.url | relative_url }}" class="article-card" data-title="{{ article.title | downcase }}" data-tags="{{ article.tags | join: ',' | downcase }}">
+        <div class="card-content">
+            <div class="card-tags">
+                {% for tag in article.tags limit:2 %}
+                <span class="card-tag">{{ tag }}</span>
+                {% endfor %}
+            </div>
+            <h2 class="card-title">{{ article.title }}</h2>
+            <p class="card-excerpt">
+                An insightful look into Islamic heritage and travel experiences, curated by {{ article.author | default: "yusuf908" }}.
+            </p>
+            <div class="card-footer">
+                <span class="card-date">{{ article.pub_date | date: "%b %d, %Y" }}</span>
+                <span class="read-more">Read Article →</span>
+            </div>
+        </div>
+    </a>
+    {% endfor %}
+</div>
+
+<!-- Hugging Face Dataset Viewer Embedding -->
+<div style="margin: 4rem auto; max-width: 1200px; padding: 0 2rem;">
+    <h2 style="color: var(--text); margin-bottom: 1rem; text-align: center;">Hugging Face RAG Dataset Viewer</h2>
+    <p style="color: var(--text-muted); text-align: center; margin-bottom: 2rem;">Explore the strictly typed RAG (Retrieval-Augmented Generation) corpus natively in your browser.</p>
+    <iframe src="https://huggingface.co/datasets/qurancn/Halal-Food-In-China/embed/viewer/default/rag_chunks" frameborder="0" width="100%" height="560px" style="border-radius: 12px; box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);"></iframe>
+</div>
+
+<!-- Search & Filter Logic -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById('searchInput');
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.article-card');
+    
+    let currentTag = 'all';
+    let searchQuery = '';
+
+    function filterCards() {
+        cards.forEach(card => {
+            const title = card.getAttribute('data-title');
+            const tags = card.getAttribute('data-tags');
+            
+            const matchesSearch = title.includes(searchQuery) || tags.includes(searchQuery);
+            const matchesTag = currentTag === 'all' || tags.includes(currentTag.toLowerCase());
+            
+            if (matchesSearch && matchesTag) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.toLowerCase();
+        filterCards();
+    });
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Remove active class from all
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add to clicked
+            btn.classList.add('active');
+            // Update tag
+            currentTag = btn.getAttribute('data-tag');
+            filterCards();
+        });
+    });
+});
+</script>
