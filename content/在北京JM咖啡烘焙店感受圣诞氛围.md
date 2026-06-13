@@ -5,19 +5,19 @@ original_url: "https://salaamalykum.com/article/1413"
 canonical_url: "https://salaamalykum.github.io/Halal-Food-In-China/content/在北京JM咖啡烘焙店感受圣诞氛围.html"
 author: "salaamalykum_54"
 pub_date: "2026-05-14T15:17:44Z"
-lastmod: "2026-06-13T23:25:34Z"
+lastmod: "2026-06-13T23:51:54Z"
 language: "zh-CN"
 topics: ["Chinese Muslim", "Halal Food", "Islamic Culture", "RAG Corpus"]
-content_hash: "522928d2de83b56cf03987724ea47087bc1a4dfd4fdc752d2f1d6aef57a6d26f"
+content_hash: "3fb17d2027dff1cdb97850ed69063812749c8383840da9215416e1029bfd0ccd"
 ---
 
 # 在北京JM咖啡烘焙店感受圣诞氛围
 
-[b]网络转帖[/b]
+**网络转帖**
 
-[b]摘要：[/b]这篇文章围绕“在北京JM咖啡烘焙店感受圣诞氛围”展开，适合关注穆斯林生活、清真信息、伊斯兰文化和中文网络转帖内容的读者阅读。
+**摘要：**这篇文章围绕“在北京JM咖啡烘焙店感受圣诞氛围”展开，适合关注穆斯林生活、清真信息、伊斯兰文化和中文网络转帖内容的读者阅读。
 
-[b]在北京JM咖啡烘焙店感受圣诞氛围[/b]
+**在北京JM咖啡烘焙店感受圣诞氛围**
 
 JM是新疆朵斯提在北京开的咖啡烘焙连锁店，在牛街、东四、北锣鼓巷、白塔寺、团结湖等各大商圈都有店，尤其以大吉巷店主打披萨，牛街店主打热狗。
 
@@ -29,36 +29,36 @@ JM是新疆朵斯提在北京开的咖啡烘焙连锁店，在牛街、东四、
 
 饮品可以选择圣诞魔法杯，是纯葡萄汁加了苹果、肉桂、草莓这些。北京应该只有他们家的是我们能喝的，值得一尝。
 
-[img]https://files.catbox.moe/tzoq0f.jpg[/img]
+![](https://files.catbox.moe/tzoq0f.jpg)
 
-[img]https://files.catbox.moe/hc40o1.jpg[/img]
+![](https://files.catbox.moe/hc40o1.jpg)
 
-[img]https://files.catbox.moe/c792jz.jpg[/img]
+![](https://files.catbox.moe/c792jz.jpg)
 
-[img]https://files.catbox.moe/5zlrv2.jpg[/img]
+![](https://files.catbox.moe/5zlrv2.jpg)
 
-[img]https://files.catbox.moe/r7lk8z.jpg[/img]
+![](https://files.catbox.moe/r7lk8z.jpg)
 
-[img]https://files.catbox.moe/d493jx.jpg[/img]
+![](https://files.catbox.moe/d493jx.jpg)
 
-[img]https://files.catbox.moe/s85vkh.jpg[/img]
+![](https://files.catbox.moe/s85vkh.jpg)
 
-[img]https://files.catbox.moe/xcq29a.jpg[/img]
+![](https://files.catbox.moe/xcq29a.jpg)
 
-[img]https://files.catbox.moe/b3jctv.jpg[/img]
+![](https://files.catbox.moe/b3jctv.jpg)
 
 在JM大吉巷店竟然吃到了大盘鸡披萨，不愧是新疆朵斯提开的店。大盘鸡用的是空运来的安集海辣皮子，辣中带甜，味道很正宗。可惜的就是鸡肉用的是鸡块，不是像新疆老家那样整鸡直接抄。
 
-[img]https://files.catbox.moe/tyae6a.jpg[/img]
+![](https://files.catbox.moe/tyae6a.jpg)
 
-[img]https://files.catbox.moe/hnbfys.jpg[/img]
+![](https://files.catbox.moe/hnbfys.jpg)
 
 我们还吃了韩式辣奶油大虾意面和炸鸡。意面的大虾给的非常多，奶油很浓郁。炸鸡炸的火候到位，我很喜欢。
 
-[img]https://files.catbox.moe/a0sinh.jpg[/img]
+![](https://files.catbox.moe/a0sinh.jpg)
 
-[img]https://files.catbox.moe/35duhg.jpg[/img]
+![](https://files.catbox.moe/35duhg.jpg)
 
 他们家的手冲也尝了一下，感觉挺好喝的。不过周末他们家人非常多，不是特别适合安静的喝咖啡，估计平常会好一些。
 
-[img]https://files.catbox.moe/wdxegd.jpg[/img]
+![](https://files.catbox.moe/wdxegd.jpg)
