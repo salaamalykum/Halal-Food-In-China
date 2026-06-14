@@ -9,7 +9,7 @@ task_categories:
 - question-answering
 - text-generation
 - text-retrieval
-- named-entity-recognition
+- token-classification
 tags:
 - halal
 - chinese-muslim
